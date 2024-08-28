@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Editor</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- CodeMirror CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.3/codemirror.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.3/theme/dracula.min.css">
+    </head>
+    
+<body>
+    <header>
+        <h1>Code Editor</h1>
+        <button id="download-btn">Download Code</button>
+    </header>
+    <div class="editor-container">
+        <div class="editor-section" id="html-editor-section">
+            <div class="editor-header">
+                <i class="fas fa-code"></i> <!-- HTML Icon -->
+                <h2>HTML</h2>
+            </div>
+            <textarea id="html-editor" placeholder="Write HTML here..."></textarea>
+        </div>
+        <div class="editor-section" id="css-editor-section">
+            <div class="editor-header">
+                <i class="fas fa-paint-brush"></i> <!-- CSS Icon -->
+                <h2>CSS</h2>
+            </div>
+            <textarea id="css-editor" placeholder="Write CSS here..."></textarea>
+        </div>
+        <div class="editor-section" id="js-editor-section">
+            <div class="editor-header">
+                <i class="fas fa-laptop-code"></i> <!-- JavaScript Icon -->
+                <h2>JavaScript</h2>
+            </div>
+            <textarea id="js-editor" placeholder="Write JavaScript here..."></textarea>
+        </div>
+    </div>
+    <iframe id="preview" sandbox="allow-scripts"></iframe>
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.3/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.3/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.3/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.3/mode/javascript/javascript.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+</body>
+</html>

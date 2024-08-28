@@ -1,0 +1,111 @@
+/* Basic Reset */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #353935;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+header {
+    background-color: #353935;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #353935;
+    display: flex;
+    justify-content: space-between; /* Align button and heading */
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+button {
+    background-color: #fff;
+    color: #353935;
+    border: 2px solid #353935;
+    border-radius: 25px; /* Make the button more rounded */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #353935;
+    color: #fff;
+}
+
+.editor-container {
+    display: flex;
+    flex-direction: row; /* Arrange editors side by side */
+    height: 37vh; /* Adjust height to 50% of the viewport height */
+    margin: 20px;
+    gap: 10px; /* Space between editor sections */
+}
+
+.editor-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow sections to take equal width */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.editor-header {
+    background-color: #353935;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #353935;
+}
+
+.editor-header i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.editor-header h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+textarea {
+    flex: 1; /* Allow textareas to take available space */
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #fff;
+    resize: none; /* Disable resizing */
+    height: calc(50vh - 40px); /* Adjust height to fit within the container */
+}
+
+textarea:focus {
+    border-color: #353935;
+    outline: none;
+}
+
+#preview {
+    width: calc(100% - 40px);
+    height: 50vh; /* Height of preview area adjusted to 50% of viewport height */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: #fff;
+}
